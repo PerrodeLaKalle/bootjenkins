@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Consulta Repositorio') {
             steps {
-                git 'https://github.com/tu-usuario/tu-repositorio.git'
+                git 'https://github.com/PerrodeLaKalle/bootjenkins.git'
             }
         }
         stage('Verificar Lectura') {
