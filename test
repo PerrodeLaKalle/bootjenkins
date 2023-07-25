@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+        stage('Consulta Repositorio') {
+            steps {
+                git 'https://github.com/tu-usuario/tu-repositorio.git'
+            }
+        }
+        stage('Verificar Lectura') {
+            steps {
+                sh 'cat test.txt'
+                echo 'OK'
+            }
+        }
+    }
+}
